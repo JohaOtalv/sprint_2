@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./Images/bg-intro-desktop.png);
+}
+
+.general {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 200px;
+
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: left;
+    z-index: 1;
+    width: 50%;
+}
+
+.poll {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    color: white;
+    width: 50%;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+form input:required:invalid{
+    background-image: url(./Images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+button {
+    cursor: pointer;
+    background-color: hsl(154, 59%, 51%);
+    padding: 10px;
+    border-radius: 8px;
+    border-width: 0px;
+    color: white;
+    height: 40px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+    text-align: center;
+}
+
+h3 {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 7px 7px 7px 7px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: medium;
+    text-align: center;
+    height: 50px;
+    margin: 0;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+input {
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-color: hsl(246, 25%, 77%);
+    border-width: 1px;
+}
+
+@media screen and (max-width:800px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .general {
+        flex-direction: column;
+        align-items: center;
+        margin: 10%;
+       
+    }
+
+    section {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    form {
+        width: 100vh;
+    }
+
+    .poll {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #formularioRegistro{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 100%;
+    }
+}
